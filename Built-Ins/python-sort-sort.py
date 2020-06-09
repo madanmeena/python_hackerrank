@@ -1,0 +1,27 @@
+#https://www.hackerrank.com/challenges/python-sort-sort/problem
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    arr = []
+
+    for _ in range(n):
+        arr.append(input())
+
+    k = int(input())
+    sortedarray=sorted(arr,key=lambda x:int(x.split()[k]))
+    for x in sortedarray:
+        print(x)
